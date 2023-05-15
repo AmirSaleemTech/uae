@@ -1,0 +1,58 @@
+.topnav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        background-color: #000000;
+        color: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        max-height: 30px;
+        font-size: larger;
+      }
+      
+      .left {
+        display: flex;
+        align-items: center;
+        margin-left: 100px;
+      }
+      
+      .contact {
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+      }
+      
+      .contact span {
+        margin-left: 10px;
+      }
+      
+      .right {
+        display: flex;
+        align-items: center;
+        margin-right: 100px;
+      }
+      
+      .right a {
+        display: inline-block;
+        margin-left: 20px;
+        color: white;
+      }
+      
+      .right a:first-child {
+        margin-left: 0;
+      }
+      
+      @media screen and (max-width: 768px) {
+        .contact span {
+          display: none;
+        }
+        
+        .right {
+          margin-right: 50px;
+        }
+        
+        .right a:not(:last-child) {
+          display: none;
+        }
+      }
+      
